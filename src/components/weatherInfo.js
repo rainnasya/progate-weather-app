@@ -5,7 +5,7 @@ const WeatherInfo = ({weatherData}) => {
   return (
     <View style={styles.marginTop20}>
       <Text style={styles.text}>The weather of {weatherData.name}</Text>
-      <Text style={[styles.temperature, styles.marginTop20]}>{weatherData.main.temp}</Text>
+      <Text style={[styles.temperature, styles.marginTop20]}>{weatherData.main.temp} C</Text>
       <View style={[styles.rowContainer, styles.marginTop20]}>
         <Image
           source={{ uri: 'https://openweathermap.org/img/w/04d.png' }}

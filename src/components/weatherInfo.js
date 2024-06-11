@@ -13,14 +13,14 @@ const WeatherInfo = ({weatherData}) => {
         />
         <Text style={[styles.text, styles.bold]}>{weatherData.weather[0].main}</Text>
       </View>
-      <Text style={styles.text}>overcast clouds</Text>
+      <Text style={styles.text}>{weatherData.weather[0].description}</Text>
       <View style={[styles.rowContainer, styles.marginTop20]}>
         <Text style={[styles.text, styles.bold]}>Visibility :</Text>
-        <Text style={[styles.text, styles.marginLeft15]}>{weatherData.visibility}</Text>
+        <Text style={[styles.text, styles.marginLeft15]}>{weatherData.visibility}km</Text>
       </View>
       <View style={[styles.rowContainer, styles.marginTop20]}>
         <Text style={[styles.text, styles.bold]}>Wind Speed :</Text>
-        <Text style={[styles.text, styles.marginLeft15]}>{weatherData.wind.speed}</Text>
+        <Text style={[styles.text, styles.marginLeft15]}>{weatherData.wind.speed}m/s</Text>
       </View>
     </View>
   )
